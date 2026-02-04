@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Arduino Made Simple - Design System
+   Primary: Arduino Teal (#00979D)
+   All colors in HSL format
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 20%;
+
+    /* Arduino Teal - #00979D */
+    --primary: 182 100% 31%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft gray for sections */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 20% 20%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 10% 45%;
+
+    /* Arduino teal light variant */
+    --accent: 182 60% 94%;
+    --accent-foreground: 182 100% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 182 100% 31%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for Arduino theme */
+    --arduino-teal: 182 100% 31%;
+    --arduino-teal-light: 182 60% 94%;
+    --arduino-teal-dark: 182 100% 25%;
+    --gray-section: 210 20% 97%;
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 182 100% 31%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 182 60% 94%;
+    --sidebar-accent-foreground: 182 100% 25%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 182 100% 31%;
+  }
+
+  .dark {
+    --background: 210 20% 10%;
+    --foreground: 210 20% 98%;
+
+    --card: 210 20% 12%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 210 20% 12%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 182 100% 40%;
+    --primary-foreground: 210 20% 10%;
+
+    --secondary: 210 20% 18%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 210 20% 18%;
+    --muted-foreground: 210 10% 60%;
+
+    --accent: 182 50% 20%;
+    --accent-foreground: 182 100% 70%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 182 100% 40%;
+
+    --arduino-teal: 182 100% 40%;
+    --arduino-teal-light: 182 50% 20%;
+    --arduino-teal-dark: 182 100% 50%;
+    --gray-section: 210 20% 14%;
+
+    --sidebar-background: 210 20% 10%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 182 100% 40%;
+    --sidebar-primary-foreground: 210 20% 10%;
+    --sidebar-accent: 182 50% 20%;
+    --sidebar-accent-foreground: 182 100% 70%;
+    --sidebar-border: 210 20% 20%;
+    --sidebar-ring: 182 100% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
