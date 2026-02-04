@@ -6,13 +6,13 @@ import StepCard from "@/components/StepCard";
 import CodeBlock from "@/components/CodeBlock";
 import MistakeCard from "@/components/MistakeCard";
 import { Button } from "@/components/ui/button";
-import { 
-  Thermometer, 
-  Lightbulb, 
-  Wrench, 
-  Code, 
-  ArrowRight, 
-  Shield, 
+import {
+  Thermometer,
+  Lightbulb,
+  Wrench,
+  Code,
+  ArrowRight,
+  Shield,
   Sparkles,
   ArrowLeft,
   AlertTriangle,
@@ -71,8 +71,8 @@ const DHTPage = () => {
       {/* Hero */}
       <section className="bg-gradient-to-b from-accent to-background py-16 md:py-24">
         <div className="container">
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
           >
             <ArrowLeft className="h-4 w-4" />
@@ -106,7 +106,7 @@ const DHTPage = () => {
               The DHT sensor measures two things: how hot it is and how much moisture is in the air.
             </p>
             <p className="text-muted-foreground">
-              <strong>Real-life examples:</strong> Weather apps use these sensors for forecasts. 
+              <strong>Real-life examples:</strong> Weather apps use these sensors for forecasts.
               Your home thermostat uses one. Greenhouses use them to keep plants healthy!
             </p>
           </div>
@@ -139,9 +139,9 @@ const DHTPage = () => {
           />
           <div className="mx-auto max-w-3xl">
             <div className="mb-6 overflow-hidden rounded-lg border">
-              <img 
-                src={breadboardDiagramImg} 
-                alt="Breadboard connection diagram" 
+              <img
+                src={breadboardDiagramImg}
+                alt="Breadboard connection diagram"
                 className="w-full"
               />
             </div>
@@ -236,7 +236,7 @@ const DHTPage = () => {
             title="Step-by-Step Wiring"
             description="Follow these steps carefully. Take your time!"
           />
-          
+
           <div className="mx-auto max-w-3xl space-y-4">
             {/* Color code reminder */}
             <div className="mb-8 flex flex-wrap justify-center gap-4">
@@ -259,25 +259,23 @@ const DHTPage = () => {
               title="Place the DHT Sensor on the Breadboard"
               description="Push the 3 pins of the DHT module into 3 different rows on the breadboard."
             />
-            
+
             <StepCard
               stepNumber={2}
               title="Connect VCC to 5V"
               description="Use a red wire to connect the VCC (or +) pin to the 5V pin on your Arduino."
             />
-            
+
             <StepCard
               stepNumber={3}
               title="Connect GND to Ground"
               description="Use a black wire to connect the GND (or -) pin to a GND pin on your Arduino."
             />
-            
+
             <StepCard
               stepNumber={4}
               title="Connect DATA to Pin 2"
               description="Use a green wire to connect the DATA (or OUT) pin to digital pin 2 on your Arduino."
-              imageSrc={dhtWiringImg}
-              imageAlt="DHT sensor wiring diagram"
             />
           </div>
         </div>
@@ -368,7 +366,7 @@ const DHTPage = () => {
             />
             <div className="mt-6 rounded-lg border border-primary/30 bg-accent/30 p-4 text-center">
               <p className="text-sm text-foreground">
-                💡 <strong>Remember:</strong> Mistakes are normal and nothing is damaged! 
+                💡 <strong>Remember:</strong> Mistakes are normal and nothing is damaged!
                 The Arduino is very forgiving.
               </p>
             </div>
@@ -459,7 +457,7 @@ const DHTPage = () => {
               </p>
             </div>
           </div>
-          
+
           <div className="mx-auto mt-12 max-w-2xl rounded-lg border-2 border-primary bg-accent p-8 text-center">
             <h3 className="mb-2 text-xl font-semibold text-foreground">🎉 Congratulations!</h3>
             <p className="mb-6 text-muted-foreground">
